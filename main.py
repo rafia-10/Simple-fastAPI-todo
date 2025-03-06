@@ -14,7 +14,7 @@ class Todo(BaseModel):
 
 todos = []
 # read everything
-@app.get('todos', response_model=List[Todo])
+@app.get('/todos', response_model=List[Todo])
 def get_todos():
     return todos
 
